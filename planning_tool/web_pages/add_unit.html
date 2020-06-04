@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html><head>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">Planning Tool</a></h1>
+          <h2>A planning tool for university</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+          <li class="selected">&gt;<a href="add_unit.html">Add unit</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+        <div id="makeinline">
+            <h1>Add a unit</h1>
+            <h2 id="error" style=" margin-left: 30px;">Please enter a unit title and number of weeks the unit has</h2>
+        </div>          
+        <input type="text" id="unitTitle" autofocus="" required="" placeholder="Unit title">
+        <input type="number" id="unitNoOfWeeks" autofocus="" required="" placeholder="Unit number of weeks">
+        <button id="addUnit">Add Unit</button>
+    </div>
+  </div>
+<script src="add_unit.js">
+</script>
+</body></html>

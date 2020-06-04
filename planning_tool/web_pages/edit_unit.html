@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style/style.css"/>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">Planning Tool</a></h1>
+          <h2>A planning tool for university</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="add_unit.html">Add unit</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+        <h1 id="unitnameedit"></h1>
+        <article class="addSession">
+            <input type="text" id="sessionTitle" autofocus="" required="" placeholder="Session title">
+            <select id = "sessionType">
+                <option value="Practical">Practical</option>
+                <option value="Lecture">Lecture</option>
+            </select>
+            <select id = "sessionWeek"></select>
+            <textarea id="sessionDesc" rows="4"  autofocus="" required="" placeholder="Add session description (optional)"></textarea>
+            <button id="addSession">Add Session</button>
+         </article>
+         <h2 id="sessions">Sessions</h2>
+         <template id="sess_week_temp">
+            <p class ="weekno">Week1</p>
+            <template id="sess_temp">
+                <article class="loadsession">
+                  <p class="sessiontype_title">session title</p>
+                  <p class="sessiondesc">session desc</p>
+                  <p class="delete">X</p>
+                </article>
+             </template>
+         </template>
+         
+    </div>
+  </div>
+<script src="edit_unit.js">
+</script>
+</body>
+</html>
